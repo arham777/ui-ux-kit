@@ -1,5 +1,5 @@
 ---
-name: ui-design-skill
+name: ui-ux-kit
 description: >-
   Design and improve ANY web or app interface with a taste-first,
   anti-AI-slop workflow, then document the result in a project DESIGN_SYSTEM.md
@@ -19,7 +19,7 @@ description: >-
   faster", "improve performance / Core Web Vitals".
 ---
 
-# UI Design Skill
+# UI/UX Kit
 
 Design interfaces that look intentional and brand-specific — never templated — and
 leave behind a single source of truth (`DESIGN_SYSTEM.md`) that keeps every future page

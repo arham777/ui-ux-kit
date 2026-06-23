@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎨 UI Design Skill
+# 🎨 UI/UX Kit
 
 **Design any web or app interface with a taste-first, anti-AI-slop workflow — then leave behind a `DESIGN_SYSTEM.md` that keeps every future page consistent.**
 
@@ -12,7 +12,7 @@ A portable [Agent Skill](https://skills.sh) for Claude Code, Cursor, OpenAI Code
 
 ## What it is
 
-`ui-design-skill` is an agent skill that turns a vague design brief into an intentional, brand-specific interface — and stops your AI agent from producing the generic, templated "AI slop" look (purple gradients, Inter everywhere, left-text/right-image hero, sparkle eyebrows, low-contrast gray text).
+`ui-ux-kit` is an agent skill that turns a vague design brief into an intentional, brand-specific interface — and stops your AI agent from producing the generic, templated "AI slop" look (purple gradients, Inter everywhere, left-text/right-image hero, sparkle eyebrows, low-contrast gray text).
 
 It does this with a **routed, taste-first workflow** and a **countable anti-slop gate** — "generic" is turned into binary checks the agent must pass before it calls the work done. Every run ends by writing a project-level `DESIGN_SYSTEM.md` so the *next* page matches the last one.
 
@@ -33,7 +33,7 @@ Most "make it look good" prompts say *"be premium, not generic."* This skill **o
 ## What's inside
 
 ```
-ui-design-skill/
+ui-ux-kit/
 ├── SKILL.md                          # The always-loaded core: routing + laws + workflow + gate
 └── references/                       # Loaded on demand, per step (token-efficient)
     ├── surface-rules.md              # Per-surface rules: landing, dashboard, app, mobile, store, docs
@@ -49,14 +49,14 @@ Only `SKILL.md` is always in context; the heavier references load only when the 
 
 ## Installation
 
-> Replace `yourusername/ui-design-skill` with your actual GitHub repo, and the skills.sh slug with your published slug.
+> Replace `arham777/ui-ux-kit` with your actual GitHub repo, and the skills.sh slug with your published slug.
 
 ### ⚡ Quick install — any supported agent (recommended)
 
 The [skills.sh](https://skills.sh) CLI detects your installed agents and places the skill in the right location for each:
 
 ```bash
-npx skills add yourusername/ui-design-skill
+npx skills add arham777/ui-ux-kit
 ```
 
 ### Claude Code
@@ -65,25 +65,25 @@ Claude Code supports the `SKILL.md` format natively.
 
 **User-level (available in every project):**
 ```bash
-git clone https://github.com/yourusername/ui-design-skill.git ~/.claude/skills/ui-design-skill
+git clone https://github.com/arham777/ui-ux-kit.git ~/.claude/skills/ui-ux-kit
 ```
 
 **Project-level (only this repo):**
 ```bash
-git clone https://github.com/yourusername/ui-design-skill.git .claude/skills/ui-design-skill
+git clone https://github.com/arham777/ui-ux-kit.git .claude/skills/ui-ux-kit
 ```
 
-Then invoke it with `/ui-design-skill`, or just describe a design task and it auto-triggers.
+Then invoke it with `/ui-ux-kit`, or just describe a design task and it auto-triggers.
 
 ### Cursor
 
 Cursor reads project rules and `AGENTS.md`. Add the skill as a project rule:
 
 ```bash
-git clone https://github.com/yourusername/ui-design-skill.git .cursor/ui-design-skill
+git clone https://github.com/arham777/ui-ux-kit.git .cursor/ui-ux-kit
 ```
 
-Then create `.cursor/rules/ui-design-skill.mdc` pointing the agent at it:
+Then create `.cursor/rules/ui-ux-kit.mdc` pointing the agent at it:
 
 ```md
 ---
@@ -91,7 +91,7 @@ description: Use the UI Design Skill for any UI/design task
 alwaysApply: false
 ---
 When designing, building, redesigning, or auditing any interface, follow
-`.cursor/ui-design-skill/SKILL.md` and its `references/` files.
+`.cursor/ui-ux-kit/SKILL.md` and its `references/` files.
 ```
 
 (Or run the `npx skills add` command above — it writes this for you.)
@@ -101,14 +101,14 @@ When designing, building, redesigning, or auditing any interface, follow
 Codex reads `AGENTS.md`. Clone the skill into the repo and reference it:
 
 ```bash
-git clone https://github.com/yourusername/ui-design-skill.git ./ui-design-skill
+git clone https://github.com/arham777/ui-ux-kit.git ./ui-ux-kit
 ```
 
 Add to your `AGENTS.md`:
 
 ```md
 ## Design tasks
-For any UI/design work, follow `./ui-design-skill/SKILL.md` and its `references/` files
+For any UI/design work, follow `./ui-ux-kit/SKILL.md` and its `references/` files
 (routing → concept → build → adversarial review → DESIGN_SYSTEM.md).
 ```
 
@@ -117,10 +117,10 @@ For any UI/design work, follow `./ui-design-skill/SKILL.md` and its `references/
 Antigravity reads `AGENTS.md` / workflow context, same as above:
 
 ```bash
-git clone https://github.com/yourusername/ui-design-skill.git ./ui-design-skill
+git clone https://github.com/arham777/ui-ux-kit.git ./ui-ux-kit
 ```
 
-Reference `./ui-design-skill/SKILL.md` from your `AGENTS.md` or a workflow file so the agent loads it on design tasks.
+Reference `./ui-ux-kit/SKILL.md` from your `AGENTS.md` or a workflow file so the agent loads it on design tasks.
 
 ### Any other agent (generic)
 
@@ -130,7 +130,7 @@ The skill is plain Markdown with YAML frontmatter — no runtime, no dependencie
 
 ## How to use
 
-Once installed, trigger it by **slash command** (`/ui-design-skill` in Claude Code) or simply by **describing the task** — the skill auto-triggers on phrases like:
+Once installed, trigger it by **slash command** (`/ui-ux-kit` in Claude Code) or simply by **describing the task** — the skill auto-triggers on phrases like:
 
 - `"design a landing page for <brand>"`
 - `"build a dashboard / store / docs site / mobile app"`
