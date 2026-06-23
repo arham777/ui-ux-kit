@@ -59,6 +59,12 @@ The [skills.sh](https://skills.sh) CLI detects your installed agents and places 
 npx skills add arham777/ui-ux-kit
 ```
 
+Using pnpm? Run it via `pnpm dlx` instead:
+
+```bash
+pnpm dlx skills add arham777/ui-ux-kit
+```
+
 ### Claude Code
 
 Claude Code supports the `SKILL.md` format natively.
@@ -87,7 +93,7 @@ Then create `.cursor/rules/ui-ux-kit.mdc` pointing the agent at it:
 
 ```md
 ---
-description: Use the UI Design Skill for any UI/design task
+description: Use the ui-ux-kit skill for any UI/design task
 alwaysApply: false
 ---
 When designing, building, redesigning, or auditing any interface, follow
