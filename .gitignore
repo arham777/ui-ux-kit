@@ -1,0 +1,20 @@
+# ── What publishes ──
+# Only the skill itself ships: SKILL.md, references/, README.md, LICENSE.
+# Everything below is local-only scratch and must NOT go in the public repo.
+
+# Throwaway test/scratch projects used to try the skill out
+test-skill/
+test-skill-*/
+updated-skill-check/
+*-skill-check/
+
+# Build output / deps (anywhere, in case a scratch project is renamed)
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+**/*.tsbuildinfo
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
