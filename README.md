@@ -6,6 +6,8 @@
 
 A portable [Agent Skill](https://skills.sh) for Claude Code, Cursor, OpenAI Codex, Google Antigravity, and any agent that reads the open `SKILL.md` format.
 
+[![skills.sh](https://skills.sh/b/arham777/ui-ux-kit)](https://skills.sh/arham777/ui-ux-kit)
+
 </div>
 
 ---
@@ -48,8 +50,6 @@ Only `SKILL.md` is always in context; the heavier references load only when the 
 ---
 
 ## Installation
-
-> Replace `arham777/ui-ux-kit` with your actual GitHub repo, and the skills.sh slug with your published slug.
 
 ### ⚡ Quick install — any supported agent (recommended)
 
